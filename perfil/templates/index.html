@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %} Página Principal {% endblock %}
+{%block content %}
+<div class="jumbotron text-center mt-4">
+  <h1 class="display-4">Bem-vindo ao Meu Blog</h1>
+  <p class="lead">Explore meus cursos e interesses pessoais.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="mb-4">Meus Cursos</h2>
+      <ul class="list-group">
+        {% for curso in cursos %}
+        <li class="list-group-item">
+          <h5 class="mb-1">{{ curso.nome }}</h5>
+          <p class="mb-0">{{ curso.descricao }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-4">Meus Gostos</h2>
+      <ul class="list-group">
+        {% for gosto in gostos %}
+        <li class="list-group-item">
+          <h5 class="mb-1">{{ gosto.nome }}</h5>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

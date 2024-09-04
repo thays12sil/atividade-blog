@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %} Sobre Mim {% endblock %} {% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img
+        src="{{ foto_url }}"
+        class="img-fluid rounded-circle mb-4"
+        alt="Foto de Perfil" />
+    </div>
+    <div class="col-md-8">
+      <h2>Sobre Mim</h2>
+      <p class="lead">
+        Olá! Meu nome é Antonia Tainã, e sou um desenvolvedor apaixonado por
+        tecnologia, programação, e criação de soluções inovadoras.
+      </p>
+      <p>
+        Tenho experiência em diversas linguagens de programação e frameworks,
+        incluindo Django, Python, HTML, CSS, JavaScript, entre outros. Meu foco
+        é criar aplicações web que sejam não apenas funcionais, mas também
+        fáceis de usar e esteticamente agradáveis.
+      </p>
+      <p>
+        Quando não estou programando, gosto de explorar novas tecnologias, ler
+        sobre ciência, e aprender constantemente. Estou sempre em busca de novos
+        desafios e oportunidades para crescer profissionalmente.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
